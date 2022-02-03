@@ -1,15 +1,18 @@
 #header {
     background: url("service.jpg") center center / cover no-repeat ;
+   
   }
   
   .text {
     white-space: pre;
-   font-size: xx-large;
-    margin-right: 3rem;
+   font-size: 28px;
+    margin-right: 1rem;
   }
   
   .sellerbutton {
-  margin-right: 10rem;
+  margin-right: 1rem;
+  
+  color: white;
   }
 
 
@@ -22,6 +25,8 @@
   body {
     font-family: Arial, Helvetica, sans-serif;
   }
+
+
   
   /* Float four columns side by side */
   .column {
@@ -42,10 +47,10 @@
   }
   .longtext {
     padding-left: 3rem;
-    white-space: pre-line;
-    font-size: small;
+    white-space: pre;
+    font-size: 15px;
     color: black;
-  
+   
   }
   
   /* Responsive columns */
@@ -53,37 +58,65 @@
     .column {
       width: 50%;
       padding: 0rem;
+
     
       margin-bottom: 20px;
     }
+
+    .card-sl {
+      width: 50%;
+    }
+
+
     .longtext {
-      padding-left: 1rem;
+      margin-left: -2.5rem;
+    }
+
+    #header {
+      background: url("service.jpg") center center / cover no-repeat ;
+     
+    }
+
+  }
+
+
+  @media screen and (max-width: 760px) {
+    .longtext {
+      margin-left: -3rem;
+      
     }
   }
 
-  @media screen and (max-width: 480px) {
-.longtext {
-  padding-left: 1rem;
-}
 
 
-  }
+
+  @media screen and (max-width: 400px) {
+    .longtext {
+      margin-left: -3.3rem;
+      
+      
+    }
+    
+      }
 
   
   /* Style the counter cards */
-  /*.card {
+  /*
+  .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
-  }*/
-  .card-sl {
+  }
+  */
+  /*.card-sl {
           border-radius: 15px;
+         
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           margin-left: 5.36rem;
         
       }
-  
+  */
   
   .card-image img {
           max-height: 100%;
@@ -99,11 +132,19 @@
   .textservice {
     font-size: x-large;
     color: black;
-    margin-left: 7rem;
-    margin-top: 3rem;
+    margin-left: 4rem;
+    margin-top: 2rem;
   }
   
   #div1 {
-  border: 20px solid white;
+ 
+  margin-left: 4rem;
+  
+
   }
+  
+
+  /*Animation*/
+
+  
   

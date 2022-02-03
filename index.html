@@ -12,18 +12,16 @@
 
 </head>
 
-
-
-<body>
+<body class="bg-light">
     
 
 
-<nav class="bg-dark navbar-dark">
+<nav class="bg-dark navbar-dark  ">
   <div class="container">
     <a href="" class="navbar-brand"><i class="fas fa-tree mr-2"></i><b>Logo</b></a>
   </div>
    
-  <ul class="nav justify-content-center bg-grey fixed">
+  <ul class="nav justify-content-center bg-grey">
     <li class="nav-item">
       <a class="nav-link text-light" aria-current="page" href="#"><b>Find Services</b></a>
     </li>
@@ -50,7 +48,7 @@
    <section id="header" class="jumbotron text-center ">
    
      <section class="text-dark p-3">
-      <h3 class="text " style="margin-left: 1rem;">In need of any service?</h3>
+      <h5 class="text " style="margin-left: 1rem;"><b>In need of any service?</b></h5>
       <br>
       <div class="container">
         <div class="d-md-flex justify-content-between align-items-center"> 
@@ -68,9 +66,68 @@
               data-bs-toggle="modal"
               data-bs-target=""
             >
-              Become a seller
+              <b>Hire a pro for your buisness</b>
             </button>
 </section>
+<!--Offcanvas for large screen-->
+
+
+<ul class="nav justify-content-center bg-grey d-none d-lg-block d-md-none d-xxl-none">
+  <li class="nav-item">
+    <a class="nav-link text-dark" aria-current="page" href="#"><b>Find Services</b></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#"><b>Explore</b></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-dark" href="#"><b>Become a seller</b></a>
+  </li>
+     
+    </div>
+  </li>  
+</ul>
+
+
+
+
+
+
+
+
+<!--Offcanvas for mobile-->
+
+<div class="offcanvas offcanvas-start" id="demo">
+  <div class="offcanvas-header">
+    <h1 class="offcanvas-title">Logo</h1>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+  <ul class="nav-item">
+
+    
+    
+    <ul>
+    <button class="btn btn-secondary" type="button">A Button</button>
+  </div>
+</div>
+
+<div class="container-fluid mt-3">
+  <button class="btn btn-primary .d-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+    List of all services
+  </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -79,6 +136,7 @@
 
 
 <h2 class="textservice"><b>Popular services</b></h2>
+<br>
 
 <div id="div1">
 
@@ -197,6 +255,5 @@
 
 
 
-
-
 </body>
+</html>
