@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Animated Email Field</title>
+    <link rel="stylesheet" href="fg.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <div class="button">
+      <button>Request for a new password</button>
+      <form class="hide">
+        <input type="email" placeholder="abc@example.com" id="email" required>
+        <input type="submit" onclick="myFun()" value="Submit">
+      </form>
+    </div>
+
+    <script>
+      $(document).ready(function(){
+        $('button').click(function(){
+          $('form').slideDown(200);
+          $('button').css({
+            "border":"none",
+            "cursor":"default",
+            "borderBottomLeftRadius":"0px",
+            "borderBottomRightRadius":"0px"
+          });
+          $('form').css({
+            "borderTopLeftRadius":"0px",
+            "borderTopRightRadius":"0px"
+          });
+          $('#email').focus();
+        });
+      });
+
+      function myFun() {
+  alert("If your Email is registered you will receive an OTP to get a new password");
+}
+    </script>
+
+
+  </body>
+</html>
